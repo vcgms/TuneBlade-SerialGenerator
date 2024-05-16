@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 
 namespace BreakFreeAudioKeyMaker
 {
-	public class TuneAero
+    public class TuneAero
 	{
-		public string Generate()
+		public static string Generate()
 		{
 			var combinedKey = "";
 
