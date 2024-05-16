@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace BreakFreeAudioKeyMaker
 {
@@ -6,15 +6,10 @@ namespace BreakFreeAudioKeyMaker
 	{
 		private static void Main(string[] args)
 		{
-			var generatorTuneBlade = new TuneBlade();
-			var resultTuneBlade = generatorTuneBlade.Generate("tuneblade@umetzu.com");
-
-			Console.WriteLine("TuneBlade: " + resultTuneBlade);
-
-			var generatorTuneAero = new TuneAero();
-			var resultTuneAero = generatorTuneAero.Generate();
-
-			Console.WriteLine("TuneAero: " + resultTuneAero);
+			Console.Write("Input a email address as License ID: ");
+			Console.WriteLine("TuneBlade License Key: " + TuneBlade.Generate(Console.ReadLine()));
+			Console.Write("Press any key to exit...");
+			Console.ReadKey();
 		}
 	}
 }
